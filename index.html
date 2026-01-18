@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>TechSphere</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="logo" id="site-logo">TechSphere</a>
+
+    <ul class="nav-links">
+      <li><a href="#" id="nav-home" class="active">Technology</a></li>
+      <li><a href="#" id="nav-products">Products</a></li>
+      <li><a href="#" id="nav-about">About Us</a></li>
+      <li class="mobile-sign">
+        <button id="nav-signin-mobile" class="sign-in">Sign In</button>
+      </li>
+    </ul>
+
+    <button id="nav-signin" class="sign-in desktop-only">Sign In</button>
+
+    <div class="burger" id="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+</header>
+
+
+<div id="home-view">
+    
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="label">THE FUTURE IS NOW</p>
+        <h1>Smart technology for everyday life</h1>
+        <p class="text">Discover the next generation of smart technology.</p>
+        <div class="buttons">
+          <button class="primary" id="btn-shop-now">Shop Now</button>
+          <button class="secondary">Explore Products</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products-header">
+        <h2>Featured Products</h2>
+        <p>Explore the latest in smart technology</p>
+      </div>
+      <div id="products-container" class="products-grid"></div>
+    </section>
+    
+    <div class="see-more">
+      <a href="#">See more</a>
+    </div>
+
+    
+</div> 
+<section id="products-view" class="tech-products-section" style="display: none;">
+    <div class="products-container">
+        
+        <div class="content-side">
+            <div class="section-title">
+                <h2>Smart technology for<br>everyday life</h2>
+                <p>Explore Now! Choose your items below and check prices on the map!</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn" data-product="headset">Headset</button>
+                <button class="filter-btn" data-product="drone">Drone</button>
+                <button class="filter-btn" data-product="vr-headset">VR Headset</button>
+                <button class="filter-btn" data-product="smart-glasses">Smart Glasses</button>
+                <button class="filter-btn" data-product="camera">Camera</button>
+                <button class="filter-btn" data-product="vr-glasses">VR Glasses</button>
+            </div>
+        </div>
+
+        <div class="visual-side">
+            <img src="./imgs/logo.png" alt="" class="bg-earth">
+
+            <div class="map-container">
+                <div class="map-scroll" id="mapScroll">
+                    <img src="./imgs/Items Shelf Picture.png" alt="Product Shelf Map" class="shelf-image">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="about-view" class="about-section" style="display: none;">
+  <div class="about-bg-image">
+    <img src="./imgs/logo.png" alt="Earth Background">
+  </div>
+
+  <div class="about-container">
+    <div class="about-panel">
+      <p>
+        <span class="highlight">TechSphere</span> is a concept design for a high-end e-commerce website
+        dedicated to smart technology and next-generation gadgets. Discover the next generation of smart technology.
+        <span class="highlight">TechSphere</span> is your premier destination for the latest in
+        wearables, VR/AR, and smart home gadgets. We bring the future to your doorstep
+        with a curated selection of innovative products designed to enhance your everyday life.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="signin-view" class="signin-section" style="display: none;">
+  <div class="signin-bg-image">
+    <img src="imgs/logo.png" alt="Earth Background">
+  </div>
+
+  <div class="signin-container">
+    <div class="signin-form-box">
+      <h2>Create an account</h2>
+      <form class="auth-form">
+        <div class="input-row">
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <input type="email" placeholder="Your E-Mail" required>
+        <input type="password" placeholder="Enter Your Password" required>
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button type="submit" class="create-acc-btn">Create account</button>
+        <div class="divider"><span>Or continue with</span></div>
+       <button type="button" class="google-btn">
+      <img src="./imgs/google-icon.png-removebg-preview.png" alt="Google Icon">
+      </button> 
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>TechSphere</h3>
+          <p>Exploring the future of smart technology.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul><li>Wearables</li><li>Smart Home</li><li>VR / AR</li></ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul><li>Help Center</li><li>Shipping</li><li>Returns</li></ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <ul><li>Instagram</li><li>Twitter</li><li>LinkedIn</li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 TechSphere. All rights reserved.</div>
+    </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
